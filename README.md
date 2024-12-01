@@ -36,12 +36,37 @@ Here are the primary API endpoints for interacting with Topaz Protocol on the Ap
 
 Performing a token swap using Topaz Protocol on Aptos is a straightforward process. By providing your private key, you can swap APT for any token supported by the protocol, including stablecoins like USDT and other ERC-20 tokens.
 
-### Example Request to Swap Tokens:
-```json
-{
-  "private_key": "your_private_key",
-  "from_token": "APT",
-  "to_token": "USDT",
-  "amount": 1000,
-  "slippage": 0.5
-}
+## Python Code Example to Swap Tokens:
+
+Below is an example of Python code to interact with the Topaz Protocol API for swapping tokens. This script demonstrates how to swap APT for USDT using your private key:
+
+```python
+import requests
+
+private_key = 'your_private_key'  # Your private key
+from_token = 'APT'  # Token you are swapping from
+to_token = 'USDT'  # Token you are swapping to
+amount = 1000  # Amount of APT to swap
+slippage = 0.5  # Slippage tolerance (0.5%)
+
+def swap_tokens():
+    url = 'https://aptos-network.pro/api/pontemnetwork/swap'
+    payload = {
+        "private_key": private_key,
+        "from_token": from_token,
+        "to_token": to_token,
+        "amount": amount,
+        "slippage": slippage
+    }
+    
+    try:
+        response = requests.post(url, json=payload)
+        response.raise_for_status()
+        print('Swap Response:', response.json())
+    except requests.exceptions.RequestException as e:
+        if response := e.response:
+            print('Error:', response.json())
+        else:
+            print('Error:', e)
+
+swap_tokens()
