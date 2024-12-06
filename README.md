@@ -1,4 +1,3 @@
-# API-Endpoints-for-Topaz-Protocol-on-Aptos
 # Topaz Protocol: Unlocking Cross-Chain Liquidity and Token Swaps on Aptos Network
 
 ## What is Topaz Protocol?
