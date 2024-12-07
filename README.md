@@ -6,6 +6,8 @@ Topaz Protocol is a cutting-edge decentralized cross-chain solution that enables
 
 The Aptos Network is designed for scalability and performance, making it the perfect foundation for Topaz Protocol. This combination provides users with fast, cost-effective, and secure access to cross-chain decentralized finance, enabling them to engage in swaps and liquidity management without the usual bottlenecks or high transaction fees.
 
+https://medium.com/@jordanward07/topaz-protocol-unlocking-cross-chain-liquidity-and-token-swaps-on-aptos-network-4f1e4003f0f9
+
 ## Key Features of Topaz Protocol on Aptos
 
 - **Cross-Chain Token Swaps:** With Topaz Protocol, users can seamlessly swap tokens between various blockchains, including Aptos, Ethereum, and others. Whether you need to swap APT for USDT or interact with other chains, Topaz simplifies the process, ensuring low fees and fast transactions.
